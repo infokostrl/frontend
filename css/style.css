@@ -1,0 +1,174 @@
+/* Google Fonts - Montserrat */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+body {
+    padding: 0;
+    max-width: 1000px;
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    background: url("../img/white_wall.png");
+}
+
+a{
+    color: black;
+}
+
+a:visited{
+    color: black;
+}
+
+/* HERO SECTION */
+.hero {
+    padding: 45px 0 45px 0;
+    text-align: center;
+    background-color: #BB7944;
+}
+
+.hero input{
+    width: 300px;
+    height: 30px;
+    border: 1px solid #7f7f77;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.hero button{
+    padding: 5px 20px 5px 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+    /* background: #0067D5; */
+    font-weight: bold;
+    cursor: pointer;
+}
+/* END OF HERO SECTION */
+
+/* FLAT LIST SECTION */
+.flat_list{
+    background-color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.flat_list h1{
+    text-align: center;
+}
+
+.flat_list img{
+    width: 250px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card_text {
+    padding: 10px 15px 15px 15px;
+}
+
+.card_text h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.card_text p {
+    margin-top: 10px;
+    line-height: 1.4;
+}
+
+.card{
+    padding: 5px 5px 5px 5px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    width: 250px;
+    margin : 20px
+}
+
+.card_text button{
+    padding: 5px 20px 5px 20px;
+    border-radius: 5px;
+    border: 0px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+    background: #0067D5;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    float: right;
+}
+
+.pagination {
+    padding: 5px 20px 5px 20px;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+}
+
+.pagination button{
+    padding: 5px 20px 5px 20px;
+    border-radius: 5px;
+    width: 75px;
+    height: 35px;
+    border: 0px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+    background: #1a83f3;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+/* END OF FLAT LIST SECTION */
+
+/* FOOTER SECTION */
+
+.footer {
+    background: #F5F5F5;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.footer img{
+    width: 150px;
+    height: 150px;
+    
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+li{
+    display: inline;
+}
+
+li a{
+    text-decoration: none;
+    font-size: 16px;
+    padding: 14px 16px;
+    font-weight: 500;
+}
+
+.footer_box_link p{
+    font-weight: 700;
+}
+
+.footer_box{
+    width: 150px;
+    margin : 20px
+}
+
+.footer_box_link{
+    width: auto;
+    margin : 20px;
+    text-align: center;
+}
+
+/* END OF FOOTER SECTION */
