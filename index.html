@@ -17,6 +17,41 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
         
+        <!-- Modal -->
+        <div class="modal" id="modal">
+            <div class="modal_contain">
+                <img src="img/dummy.png" alt="Gambar Kos">
+                <br>
+                <h2><b>Boarding House </b></h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam autem accusamus 
+                    esse officiis similique eum deserunt modi, amet suscipit saepe molestias natus quae dolor
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam autem accusamus 
+                    esse officiis similique eum deserunt modi, amet suscipit saepe molestias natus quae dolor
+                </p>
+                <ul>
+                    <li><b>Alamat :</b> <a href="#">Jl. STPP, Romang Lompoa</a></li>
+                    <li><b>No. Telpon :</b> <a href="tel:911">911</a></li>
+                </ul>
+                <button name="close" id="close">Close</button>
+            </div>
+        </div>
+
+        <!-- Login -->
+        <div class="login" id="login">
+            <div class="login_isi">
+                <img src="img/login.png" alt="Logo">
+                <div class="input_login">
+                    <input type="text" class="inputs" name="email" placeholder="E-mail">
+                    <br>
+                    <input type="password" name="password" placeholder="Password">
+                    <br>
+                    <button type="submit" name=submit>Login</button>
+                    <br>
+                    <a href="#footer" id="login_closed">Close</a>
+                </div>
+            </div>
+        </div>
+
         <!-- Hero and search -->
         <div class="hero">
             <img src="img/infokos_final.png" alt="Info Kost Banner">
@@ -26,88 +61,13 @@
             <button type="submit" name="search">Search</button>
         </div>
 
+        
+        <!-- Flat List -->
         <div class="flat_list">
             <h1>Flat List</h1>
 
             <!-- Bagian Pertama -->
             <div class="container">
-                <div class="card">
-                    <img src="img/dummy.png">
-                    <div class="card_text">
-                        <h3><b>Boarding House </b></h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam autem accusamus 
-                            esse officiis similique eum deserunt modi, amet suscipit saepe molestias natus quae dolor
-                        </p>
-                        <button type="submit" id="more" name="more">More...</button>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="img/dummy.png">
-                    <div class="card_text">
-                        <h3><b>Boarding House </b></h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam autem accusamus 
-                            esse officiis similique eum deserunt modi, amet suscipit saepe molestias natus quae dolor
-                        </p>
-                        <button type="submit" id="more" name="more">More...</button>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="img/dummy.png">
-                    <div class="card_text">
-                        <h3><b>Boarding House </b></h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam autem accusamus 
-                            esse officiis similique eum deserunt modi, amet suscipit saepe molestias natus quae dolor
-                        </p>
-                        <button type="submit" id="more" name="more">More...</button>
-                    </div>
-                </div>
-                
-                <div class="card">
-                    <img src="img/dummy.png">
-                    <div class="card_text">
-                        <h3><b>Boarding House </b></h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam autem accusamus 
-                            esse officiis similique eum deserunt modi, amet suscipit saepe molestias natus quae dolor
-                        </p>
-                        <button type="submit" id="more" name="more">More...</button>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="img/dummy.png">
-                    <div class="card_text">
-                        <h3><b>Boarding House </b></h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam autem accusamus 
-                            esse officiis similique eum deserunt modi, amet suscipit saepe molestias natus quae dolor
-                        </p>
-                        <button type="submit" id="more" name="more">More...</button>
-                    </div>
-                </div>
-                
-                <div class="card">
-                    <img src="img/dummy.png">
-                    <div class="card_text">
-                        <h3><b>Boarding House </b></h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam autem accusamus 
-                            esse officiis similique eum deserunt modi, amet suscipit saepe molestias natus quae dolor
-                        </p>
-                        <button type="submit" id="more" name="more">More...</button>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="img/dummy.png">
-                    <div class="card_text">
-                        <h3><b>Boarding House </b></h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam autem accusamus 
-                            esse officiis similique eum deserunt modi, amet suscipit saepe molestias natus quae dolor
-                        </p>
-                        <button type="submit" id="more" name="more">More...</button>
-                    </div>
-                </div>
-                
                 <div class="card">
                     <img src="img/dummy.png">
                     <div class="card_text">
@@ -127,25 +87,26 @@
             </div>
         </div>
 
-        <div class="footer">
-                <div class="footer_box">
+        <!-- Footer -->
+        <div class="footer" id="footer">
+                <div class="three footer_box">
                     <img src="img/infokost_black_final_crop.png">
                 </div>
     
                 <div class="footer_box_link">
                     <ul>
                         <li class="li"><a href="#">Contact Us</a></li>
-                        <li class="li"><a href="#">Terms of Service</a></li>
+                        <li class="li"><a href="#footer" id="login_box">Login</a></li>
                     </ul>
                 </div>
                 
-                <div class="footer_box_link">
+                <div class="two footer_box_link">
                     <p>
                         &copy; Info Kost, Inc. 2021
                     </p>
                 </div>
         </div>
 
-        <script src="" async defer></script>
+        <script src="js/script.js" async defer></script>
     </body>
 </html>
