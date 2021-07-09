@@ -184,9 +184,10 @@ a:visited{
     top: 0;
     left: 0;
     bottom: 0;
+    right: 0;
     position: fixed;
     overflow-y: auto;
-    max-width: 100%;
+    /* max-width: 100%; */
     display: flex;
     justify-items: center;
     align-items: center;
@@ -209,16 +210,19 @@ a:visited{
     margin-left: auto;
     margin-right: auto;
     padding-top: 20px;
-    max-width: 100%;
+    /* max-width: 100%; */
 }
 
 .modal_contain {
     padding: 5px 50px 5px 50px;
     border: 1px solid black;
-    margin: 25px 150px 25px 150px;
+    margin: auto;
+    width: 650px;
+    height: 600px;
+    overflow-y: auto;
     background-color: white;
     border-radius: 5px;
-    max-width: 100%;
+    /* max-width: 100%; */
 }
 
 .modal_contain h2 {
@@ -260,7 +264,7 @@ a:visited{
     bottom: 0;
     left: 0;
     right: 0;
-    max-width: 100%;
+    /* max-width: 100%; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -317,4 +321,45 @@ a:visited{
     font-size: 16px;
     margin-bottom: 20px;
     font-weight: 700;
+}
+
+/* Responsive modal */
+/* For tablet */
+@media only screen and (max-width : 768px) { 
+
+    /* Login modal */
+    .login_isi{
+        width: 330px;
+    }
+    .login_isi img{
+        width: 330px;
+    }
+
+    /* More modal */
+    .modal_contain {
+        width: 500px;
+        height: 700px;
+    }
+}
+
+/* For mobile */
+@media only screen and (max-width: 600px) {
+    .modal_contain{
+        width: 310px;
+        height: 450px;
+        padding: 20px;
+    }
+
+    .modal_contain img{
+        width: 280px;
+    }
+
+    .modal_contain p{
+        font-size: 14px;
+    }
+
+    .modal_contain li{
+        font-size: 14px;
+    }
+    
 }
