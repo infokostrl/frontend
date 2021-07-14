@@ -8,20 +8,37 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Info Kost Romang Lompoa</title>
-        <meta name="description" content="">
+        <meta name="description" content="Info Kost khusus untuk wilayah Romang Lompoa">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-        
         <!-- Modal -->
         <div class="modal" id="modal">
-            <div class="modal_contain">
-                <img src="img/dummy.png" alt="Gambar Kos">
-                <br><br>
+            <div class="modal_contain shadow">
+                <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="img/dummy.png" class="d-block w-100" alt="Image">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/dummy.png" class="d-block w-100" alt="Image">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/dummy.png" class="d-block w-100" alt="Image">
+                        </div>
+                    </div>
+                    <a role="button" class="carousel-control-prev" data-bs-target="#carousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </a>
+                    <a role="button" class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </a>
+                </div>
+                <br>
                 <h2><b>Boarding House </b></h2>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam autem accusamus 
                     esse officiis similique eum deserunt modi, amet suscipit saepe molestias natus quae dolor
@@ -38,12 +55,11 @@
 
         <!-- Login -->
         <div class="login" id="login">
-            <div class="login_isi">
+            <div class="login_isi shadow">
                 <img src="img/login.png" alt="Logo">
-                <div class="input_login">
-                    <input type="text" class="inputs" name="email" placeholder="E-mail">
-                    <br>
-                    <input type="password" name="password" placeholder="Password">
+                <div class="input_login form-group justify-content-center">
+                    <input type="email" class="form-control" name="email" placeholder="E-mail">
+                    <input type="password" class="form-control" name="password" placeholder="Password">
                     <br>
                     <button type="submit" name=submit>Login</button>
                     <br>
@@ -70,55 +86,25 @@
 
         <!-- Flat List -->
         <div class="flat_list">
-            <h1>Flat List</h1>
+            <h2>Flat List</h2>
 
             <!-- Bagian Pertama -->
             <div class="container">
                 <div class="container_card">
-                    <div class="card">
+                    <div class="card_custom">
                         <img src="img/dummy.png">
                         <div class="card_text">
-                            <h3><b>Boarding House </b></h3>
+                            <h5><b>Boarding House </b></h5>
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam autem accusamus 
                                 esse officiis similique eum deserunt modi, amet suscipit saepe molestias natus quae dolor
                             </p>
                             <button type="submit" id="more" name="more">More...</button>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card_custom">
                         <img src="img/dummy.png">
                         <div class="card_text">
-                            <h3><b>Boarding House </b></h3>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam autem accusamus 
-                                esse officiis similique eum deserunt modi, amet suscipit saepe molestias natus quae dolor
-                            </p>
-                            <button type="submit" id="more" name="more">More...</button>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="img/dummy.png">
-                        <div class="card_text">
-                            <h3><b>Boarding House </b></h3>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam autem accusamus 
-                                esse officiis similique eum deserunt modi, amet suscipit saepe molestias natus quae dolor
-                            </p>
-                            <button type="submit" id="more" name="more">More...</button>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="img/dummy.png">
-                        <div class="card_text">
-                            <h3><b>Boarding House </b></h3>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam autem accusamus 
-                                esse officiis similique eum deserunt modi, amet suscipit saepe molestias natus quae dolor
-                            </p>
-                            <button type="submit" id="more" name="more">More...</button>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="img/dummy.png">
-                        <div class="card_text">
-                            <h3><b>Boarding House </b></h3>
+                            <h5><b>Boarding House </b></h5>
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam autem accusamus 
                                 esse officiis similique eum deserunt modi, amet suscipit saepe molestias natus quae dolor
                             </p>
@@ -130,15 +116,24 @@
             
             <br>
 
-            <div class="pagination">
-                <button type="submit" name="next">Prev</button>
-                <button type="submit" name="next">Next</button>
-            </div>
+            <nav>
+                <ul class="pagination justify-content-center fw-bold">
+                    <li class="page-item disabled">
+                        <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">Next</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
 
         <!-- Footer -->
-        <div class="footer" id="footer">
-                <div class="three footer_box">
+        <div class="footer_custom">
+                <div class="footer_box">
                     <img src="img/infokost_black_final_crop.png">
                 </div>
     
@@ -149,13 +144,12 @@
                     </ul>
                 </div>
                 
-                <div class="two footer_box_link">
-                    <p>
-                        &copy; Info Kost, Inc. 2021
-                    </p>
+                <div class="footer_box_link fw-bold">
+                    &copy; Info Kost, Inc. 2021
                 </div>
         </div>
 
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
         <script src="js/script.js" async defer></script>
     </body>
 </html>
