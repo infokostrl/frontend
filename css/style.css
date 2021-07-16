@@ -1,6 +1,12 @@
 /* Google Fonts - Montserrat */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
 
+#mapid {
+    max-width: 75%;
+    height: 400px;
+    margin: 0 auto;
+}
+
 body {
     padding: 0;
     /* max-width: 1000px; */
@@ -71,13 +77,19 @@ a:visited{
     text-align: center;
 }
 
-.content_hero button{
+.content_hero a{
     padding: 5px 20px;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
-    /* background: #0067D5; */
+    background: #dbd9d9;
     font-weight: bold;
+    color: black;
     cursor: pointer;
+}
+.content_hero a:hover{
+    background-color: rgb(67, 67, 255);
+    transition: all 0.5s ease;
+    color: white;
 }
 /* END OF HERO SECTION */
 
@@ -89,6 +101,7 @@ a:visited{
 }
 
 .flat_list h2{
+    margin-top: 10px;
     text-align: center;
     font-weight: 700;
 }
@@ -98,8 +111,12 @@ a:visited{
 }
 
 .container{
-    max-width: 1000px;
+    max-width: 900px;
     margin: 0 auto;
+}
+
+.container p{
+    line-height: 2.0;
 }
 
 .container_card{
@@ -130,7 +147,7 @@ a:visited{
     margin : 20px;
 }
 
-.card_text button{
+.card_text a{
     padding: 4px 20px;
     border-radius: 5px;
     border: 0px;
@@ -142,6 +159,7 @@ a:visited{
     font-weight: bold;
     cursor: pointer;
     float: right;
+    text-decoration: none;
 }
 
 .pagination_custom {
@@ -164,6 +182,15 @@ a:visited{
     font-weight: bold;
     cursor: pointer;
 }
+
+.garis{
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    margin-bottom: 30px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /* END OF FLAT LIST SECTION */
 
 /* FOOTER SECTION */
@@ -217,86 +244,6 @@ a:visited{
 }
 
 /* END OF FOOTER SECTION */
-
-/* MODAL SECTION */
-.modal{
-    background-color: rgba(0, 0, 0, 0.25);
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    position: fixed;
-    overflow-y: auto;
-    /* max-width: 100%; */
-    display: flex;
-    justify-items: center;
-    align-items: center;
-    
-    /* Kasih mati dulu modalnya */
-    opacity: 0;
-    pointer-events: none;
-    transition: 0.5s ease;
-}
-
-.modal.show{
-    opacity: 1;
-    pointer-events: auto;
-    transition: 0.5s ease;
-}
-
-.modal_contain {
-    padding: 20px 50px 5px 50px;
-    /* border: 1px solid black; */
-    margin: auto;
-    width: 650px;
-    height: 600px;
-    overflow-y: auto;
-    background-color: white;
-    border-radius: 5px;
-    /* max-width: 100%; */
-}
-
-.modal_contain h2 {
-    margin-top: 0;
-    margin-bottom: 0;
-}
-
-.modal_contain p {
-    margin-top: 10px;
-    line-height: 1.8;
-}
-
-.modal_contain li{
-    line-height: 2.0;
-}
-
-.modal_contain button{
-    padding: 5px 20px 5px 20px;
-    border-radius: 5px;
-    border: 0px;
-    margin-bottom: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
-    background: #868686;
-    color: white;
-    font-weight: bold;
-    cursor: pointer;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-}
-
-/* Image container */
-.image_items img{
-    display: block;
-    max-width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 20px;
-    /* max-width: 100%; */
-    position: relative;
-}
-
-/* END OF MODAL SECTION */
 
 /* LOGIN SECTION */
 .login{
@@ -366,6 +313,10 @@ a:visited{
     font-weight: 700;
 }
 
+/* INFO KOST SECTION */
+
+/* END OF INFO KOST SECTION */
+
 /* Responsive modal */
 /* For tablet */
 @media only screen and (max-width : 768px) { 
@@ -377,12 +328,6 @@ a:visited{
     .login_isi img{
         width: 330px;
     }
-
-    /* More modal */
-    .modal_contain {
-        width: 500px;
-        height: 700px;
-    }
     
     /* .video{
         display: none;
@@ -393,23 +338,6 @@ a:visited{
 @media only screen and (max-width: 600px) {
     .hero{
         background-color: #bb7944;
-    }
-    .modal_contain{
-        width: 310px;
-        height: 450px;
-        padding: 20px;
-    }
-
-    .modal_contain img{
-        width: 280px;
-    }
-
-    .modal_contain p{
-        font-size: 14px;
-    }
-
-    .modal_contain li{
-        font-size: 14px;
     }
 
     .video{
