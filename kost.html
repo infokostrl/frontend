@@ -16,9 +16,10 @@
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
         <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
     </head>
+
     <body>
         <!-- Login -->
-        <div class="login" id="login">
+        <!-- <div class="login" id="login">
             <div class="login_isi shadow">
                 <img src="img/login.png" alt="Logo">
                 <div class="input_login form-group justify-content-center">
@@ -30,7 +31,8 @@
                     <a href="#footer" id="login_closed">Close</a>
                 </div>
             </div>
-        </div>
+        </div> -->
+        <!-- End Login -->
 
         <!-- Hero and search -->
         <div class="video">
@@ -38,18 +40,17 @@
         </div>
         <div class="hero">
             <div class="content_hero">
-                <img src="img/infokos_final.png" alt="Info Kost Banner">
+                <a href="index.html"><img src="img/infokos_final.png" alt="Info Kost Banner"></a>
                 <br>
                 <input type="text" name="search" placeholder="Cari disini">
                 <br>
-                <a href="#" class="btn">Search</a>
+                <a href="search.html" class="btn search">Search</a>
             </div>
         </div>
-
-        <!-- Ada garis melengkung -->
+        <!-- End Hero and search -->
 
         <!-- Info Kost -->
-        <div class="flat_list">
+        <div class="flat_list" id="info">
             <h2>Boarding House</h2>
             <h4 style="text-align: center; color: red;"><b>Rp5.200.000 - Rp7.000.000 / Tahun</b></h4>
             <br>
@@ -116,8 +117,10 @@
                     // Pop up marker
                     marker.bindPopup('<a href="https://goo.gl/maps/54kMkUHbggwPDQu47" target="_blank"><b>Kost Ernias</b></a>').openPopup();
                 </script>
+                <!-- End Leaflet OpenStreetMap -->
             </div>
         </div>
+        <!-- End Info Kost -->
 
 
         <!-- Footer -->
@@ -128,8 +131,8 @@
     
                 <div class="footer_box_link">
                     <ul>
-                        <li class="li"><a href="#">Contact Us</a></li>
-                        <li class="li"><a href="#footer" id="login_box">Login</a></li>
+                        <li class="li"><a role="button" data-bs-toggle="modal" data-bs-target="#contactUs">Contact Us</a></li>
+                        <li class="li"><a href="admin.php" target="_blank">Login</a></li>
                     </ul>
                 </div>
                 
@@ -137,6 +140,37 @@
                     &copy; Info Kost, Inc. 2021
                 </div>
         </div>
+        <!-- End Footer -->
+
+        <!-- Modal contact us -->
+        <div class="modal fade" id="contactUs" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Contact Us</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <table cellpadding="5px">
+                            <tr>
+                                <th>E-mail</th>
+                                <th>:</th>
+                                <td><a href="mailto:infokostrl@gmail.com">infokostrl@gmail.com</a></td>
+                            </tr>
+                            <tr>
+                                <th>No. Telepon</th>
+                                <th>:</th>
+                                <td><a href="tel:081355905756">081355905756 (Darul)</a></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Modal contact us -->
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
         <script src="js/script.js" async defer></script>
